@@ -16,18 +16,18 @@
     }
 
     //fonction qui renvoie true si le combo mdp / username existe dans la db
-    function user_check($mdp, $identifiant)
+    function user_check($mdp, $nom)
     {
         $bdd = db_connect();
 
-        $sql = 'SELECT id_user FROM user WHERE identifiant = ? and mdp = SHA1(?) ';
+        $sql = 'SELECT id_user FROM user WHERE nom = ? and mdp = SHA1(?) ';
         $req = $bdd -> prepare ($sql) ;
-        $req->execute([$identifiant, $mdp]);
+        $req->execute([$nom, $mdp]);
 
         $data = $req->fetch();
         $row = $req->rowCount();        
 
-        // si le row est égal à 1 alors un utilisateur ac le combo mdp/identifiant existe
+        // si le row est égal à 1 alors un utilisateur ac le combo mdp/nom existe
         if ($row == 1 )
         {
             return true;
@@ -35,13 +35,13 @@
     }
 
     //fonction qui récupère les infos du client (sauf le hash du mdp)
-    function user_info($identifiant)
+    function user_info($nom)
     {
         $bdd = db_connect();
 
-        $sql = 'SELECT id_user,prenom,nom,identifiant,mail,role  FROM user WHERE identifiant = ?';
+        $sql = 'SELECT id_user,nom,mail  FROM user WHERE nom = ?';
         $req = $bdd -> prepare ($sql);
-        $req->execute([$identifiant]);
+        $req->execute([$nom]);
 
         $data = $req->fetch();
               
