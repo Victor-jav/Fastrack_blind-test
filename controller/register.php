@@ -2,8 +2,7 @@
 
 if(!empty($_GET['password']) AND !empty($_GET['username'])){
     require('model\register.php');
-    $prenom = 'antonin';
-    bdd("INSERT INTO `user` (`id_user`, `prenom`, `nom`, `identifiant`, `mdp`, `mail`, `role`) VALUES (NULL, '".$_GET['first_name']."', '".$_GET['full_name']."', '".$_GET['username']."', '".sha1($_GET['password'])."', '".$_GET['email']."', 'client');");
+    bdd("INSERT INTO `user` (`id_user`, `nom`, `mdp`, `mail`) VALUES (NULL, '".$_GET['username']."', '".sha1($_GET['password'])."', '".$_GET['email']."'");
     setcookie('account_created', True, time()+20);
     header('Location: index.php');
     exit();

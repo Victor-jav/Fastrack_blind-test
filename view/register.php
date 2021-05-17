@@ -12,14 +12,14 @@ require('view\header.php');
             <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
             <label><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-            <label><b>Prénom</b></label>
-            <input type="text" placeholder="Entrer votre prénom" name="first_name" required>
-            <label><b>Nom</b></label>
-            <input type="text" placeholder="Entrer le mot de passe" name="full_name" required>
             <label><b>Mail</b></label>
             <input type="text" placeholder="Entrer votre email" name="email" required>
             <input type="submit" id='submit' value='INSCRIPTION' name ='action'>
         </form>
+
+        <form action="./index.php" method="GET">
+		    <input id='submit' type="submit" value="RETOUR A LA PAGE DE CONNEXION" name="action">
+		</form>
     </div>
 </div>
 <?php

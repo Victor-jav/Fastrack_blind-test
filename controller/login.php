@@ -10,7 +10,7 @@
 
             $client = user_info($_GET['username']);
 
-            foreach(array('id_user','prenom','nom','identifiant','mail','role') as $key )
+            foreach(array('id_user','nom','mail') as $key )
             {
                 $_SESSION[$key] = $client[$key];
             }
@@ -25,4 +25,4 @@
 
     $content="";
     require_once('./view/login.php');
-?>    
+?> 
