@@ -25,7 +25,7 @@
         $req->execute([$nom, $mdp]);
 
         $data = $req->fetch();
-        $row = $req->rowCount();        
+        $row = $req->rowCount();   
 
         // si le row est égal à 1 alors un utilisateur ac le combo mdp/nom existe
         if ($row == 1 )

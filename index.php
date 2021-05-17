@@ -39,7 +39,7 @@ session_start();
 			}
 		}
 	}
-	catch(Exception $e)
+	catch(Exeception $e)
 	{
 		echo 'Erreur : '. $e->getMessage();
 	}
