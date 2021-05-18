@@ -24,8 +24,7 @@ body{
 }
 /* Bordered form */
 #container h1{
-    width: 38%;
-    margin: 0 auto;
+    text-align: center;
     padding-bottom: 10px;
 }
 
