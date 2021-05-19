@@ -10,7 +10,7 @@
 
             $client = user_info($_GET['username']);
 
-            foreach(array('id_user','nom','mail') as $key )
+            foreach(array('id_user','nom', 'prenom', 'identifiant', 'mail') as $key )
             {
                 $_SESSION[$key] = $client[$key];
             }

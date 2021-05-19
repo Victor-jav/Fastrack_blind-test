@@ -19,27 +19,18 @@ session_start();
 				case  'INSCRIPTION':
 					include("./controller/register.php");
 					break;
-				case 'sign_out':
-					include("./controller/sign_out.php");
-					break;
-				case  'shop':
-					include("./controller/shop.php");
-					break;
 				case  'accueil':
 					include("./controller/accueil.php");
 					break;
-				case  'cd.php':
-					include("./view/inscription.php");
-					break;
-				case  'about.php':
-					include("./view/inscription.php");
+				case 'sign_out':
+					include("./controller/sign_out.php");
 					break;
 				default :
 					include("./controller/login.php");
 			}
 		}
 	}
-	catch(Exeception $e)
+	catch(Exception $e)
 	{
 		echo 'Erreur : '. $e->getMessage();
 	}

@@ -15,9 +15,9 @@ require('view\header.php');
             <label><b>Prénom</b></label>
             <input type="text" placeholder="Entrer votre prénom" name="first_name" required>
             <label><b>Nom</b></label>
-            <input type="text" placeholder="Entrer le mot de passe" name="full_name" required>
+            <input type="text" placeholder="Entrer votre nom" name="full_name" required>
             <label><b>Mail</b></label>
-            <input type="text" placeholder="Entrer votre email" name="email" required>
+            <input type="email" placeholder="Entrer votre email" name="email" required>
             <input type="submit" id='submit' value='INSCRIPTION' name ='action'>
         </form>
     </div>
