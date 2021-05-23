@@ -16,16 +16,16 @@ function db_connect()
 }
 
 $son = fopen("")
-if (!$file) {
+if (!$son) {
     echo "<p>Impossible de lire la page.\n";
     exit;
   }
-  while (!feof ($file)) {
-      $line = fgets ($file, 1024);
+  while (!feof ($son)) {
+      $line = fgets ($son, 1024);
       /* Cela ne fonctionne que si les balises Title sont correctement utilisées */
       if (preg_match ("@\<title\>(.*)\</title\>@i", $line, $out)) {
           $title = $out[1];
           break;
       }
   }
-  fclose($file);
+  fclose($son);
