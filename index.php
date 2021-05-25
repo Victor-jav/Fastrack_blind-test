@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 
@@ -21,6 +19,9 @@ session_start();
 					break;
 				case  'accueil':
 					include("./controller/accueil.php");
+					break;
+				case  'Envoyer':
+					include("./controller/tchat.php");
 					break;
 				case 'sign_out':
 					include("./controller/sign_out.php");
