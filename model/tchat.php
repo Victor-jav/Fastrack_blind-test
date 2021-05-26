@@ -7,9 +7,10 @@ if (!$connection){ // Contrôler la connexion
 }
 
 else {
-if(isset($_GET['action'])) {
+if(!empty($_GET['message'])) {
 
-        $message = $_GET['message'];
+        $message = ($_GET['message']);
+        // $message = htmlspecialchars($_GET['message']);
         $user = $_SESSION['id_user'];
 
         $Ajouter="INSERT INTO chat (id_chat, id_user, message) VALUES (NULL, '$user', '$message')";

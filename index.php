@@ -20,6 +20,9 @@ session_start();
 				case  'accueil':
 					include("./controller/accueil.php");
 					break;
+				case  'tchat':
+					include("./controller/tchat.php");
+					break;
 				case  'Envoyer':
 					include("./controller/tchat.php");
 					break;

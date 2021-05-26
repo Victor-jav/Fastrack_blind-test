@@ -43,54 +43,37 @@
 </header>
 
 <body>
+    
+    <div class="container">
+        <h1>T-Chat Global</h1>
 
-    <p>FASTRACK GAME</p>
+        <!-- affiche les messages en tant réel -->
 
-    <form action="./index.php" method="POST">
-        <div class="topnav2">
+        <div class='base-container'>
+        <section id="messages"></section>
 
-            <form id="fastrack" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="fastrack" />
-            </form>
+        
+        <script>
+            setInterval('load_messages()', 500);
 
-            <form id="create_lobby" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="create_lobby" />
-            </form>
-            <a href='#' onclick='document.getElementById("create_lobby").submit()'>Créer une Partie</a>
+            function load_messages() {
+                $('#messages').load('./model/tchat_affichage.php')
+            }
+
+        </script>
         </div>
-    </form>
 
-    <br><br>
 
-    <form action="./index.php" method="POST">
-        <div class="topnav3">
+        <div class="message_box">
+            <form action="./index.php" method="GET">
+                
+                    <textarea placeholder="Ecrivez un Message..." rows="5" name="message" id="message"></textarea>
 
-            <form id="fastrack" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="fastrack" />
+                    <input type="submit" id="submit" value="Envoyer" name='action'>
+                
             </form>
-
-            <form id="join_lobby" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="join_lobby" />
-            </form>
-            <a href='#' onclick='document.getElementById("join_lobby").submit()'>Rejoindre une Partie</a>
         </div>
-    </form>
-
-    <br><br>
-
-    <form action="./index.php" method="POST">
-        <div class="topnav4">
-
-            <form id="fastrack" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="fastrack" />
-            </form>
-
-            <form id="tchat" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="tchat" />
-            </form>
-            <a href='#' onclick='document.getElementById("tchat").submit()'>Discuter</a>
-        </div>
-    </form>
+    </div>
 
 </body>
 

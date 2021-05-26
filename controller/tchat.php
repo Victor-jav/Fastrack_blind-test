@@ -7,11 +7,11 @@ if (empty($_SESSION['id_user'])){
 
 require('model\tchat.php');
 
-$page_css = "\"./public/style_accueil.css\"";
+$page_css = "\"./public/style_tchat.css\"";
 $title = "Accueil";
 
 ob_start();
 //ici
 $content = ob_get_clean();
-require('.\view\Accueil.php');
+require('.\view\tchat.php');
 ?>
