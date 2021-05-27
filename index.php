@@ -20,6 +20,15 @@ session_start();
 				case  'accueil':
 					include("./controller/accueil.php");
 					break;
+				case  'creer_lobby':
+					include("./controller/creer_lobby.php");
+					break;
+				case  'rejoindre_lobby':
+					include("./controller/rejoindre_lobby.php");
+					break;
+				case  'afficher_lobby':
+					include("./controller/afficher_lobby.php");
+					break;
 				case  'tchat':
 					include("./controller/tchat.php");
 					break;

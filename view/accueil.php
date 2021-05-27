@@ -53,10 +53,10 @@
                 <input type="hidden" name="action" value="fastrack" />
             </form>
 
-            <form id="create_lobby" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="create_lobby" />
+            <form id="creer_lobby" action="./index.php" method='GET'>
+                <input type="hidden" name="action" value="creer_lobby" />
             </form>
-            <a href='#' onclick='document.getElementById("create_lobby").submit()'>Créer une Partie</a>
+            <a href='#' onclick='document.getElementById("creer_lobby").submit()'>Créer une Partie</a>
         </div>
     </form>
 
@@ -69,10 +69,10 @@
                 <input type="hidden" name="action" value="fastrack" />
             </form>
 
-            <form id="join_lobby" action="./index.php" method='GET'>
-                <input type="hidden" name="action" value="join_lobby" />
+            <form id="rejoindre_lobby" action="./index.php" method='GET'>
+                <input type="hidden" name="action" value="rejoindre_lobby" />
             </form>
-            <a href='#' onclick='document.getElementById("join_lobby").submit()'>Rejoindre une Partie</a>
+            <a href='#' onclick='document.getElementById("rejoindre_lobby").submit()'>Rejoindre une Partie</a>
         </div>
     </form>
 
