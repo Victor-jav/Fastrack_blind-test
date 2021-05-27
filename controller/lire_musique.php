@@ -4,7 +4,7 @@ function db_connect()
 {
     try
     {
-        $pdo = new PDO('mysql:host=localhost;dbname=mybdd','root','');
+        $pdo = new PDO('mysql:host=localhost;dbname=fastrack','root','');
         $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
         //echo 'connextion réussie';
         return $pdo;
@@ -14,7 +14,12 @@ function db_connect()
         echo "bug lors de la co ac la bdd";
     }
 }
-
+<form name='fo' action="" method='post' enctype='multipart/form-data'>
+                <label><b>musique : </b></label><br>
+                <input type="file" name='son'><br><br>
+                <input type="submit" name='valider' value='charger'>
+            </form>
+            
 $son = fopen("")
 if (!$son) {
     echo "<p>Impossible de lire la page.\n";
@@ -29,3 +34,6 @@ if (!$son) {
       }
   }
   fclose($son);
+
+
+  ?>
