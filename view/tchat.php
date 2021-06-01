@@ -43,34 +43,53 @@
 </header>
 
 <body>
-    
+
     <div class="container">
         <h1>T-Chat Global</h1>
 
         <!-- affiche les messages en tant réel -->
 
-        <div class='base-container'>
-        <section id="messages"></section>
+        <div id='base-container'>
+            <section id="messages"></section>
 
-        
-        <script>
-            setInterval('load_messages()', 500);
 
-            function load_messages() {
-                $('#messages').load('./model/tchat_affichage.php')
-            }
+            <script>
+                //Function qui va scroll vers le bas automatiquement sur les messages récent.
+                //Si l'utilisateur utilise la scroll bar la function est annulé pour qu'il puisse lire les vieux messages
 
-        </script>
+
+
+                //fuction qui vas afficher les messages toutes les 100ms
+
+                setInterval('load_messages()', 100);
+
+                var scrolled = false;
+
+                function load_messages() {
+                    $('#messages').load('./model/tchat_affichage.php')
+
+                    if (!scrolled) {
+                        document.getElementById('base-container').scrollTop = document.getElementById('base-container').scrollHeight;
+                        scrolled = false;
+                    }
+                }
+                $("#base-container").on('scroll', function () {
+                    scrolled = true;
+                });
+
+            </script>
+            
+
         </div>
 
 
         <div class="message_box">
             <form action="./index.php" method="GET">
-                
-                    <textarea placeholder="Ecrivez un Message..." rows="5" name="message" id="message"></textarea>
 
-                    <input type="submit" id="submit" value="Envoyer" name='action'>
-                
+                <textarea placeholder="Ecrivez un Message..." rows="5" name="message" id="message"></textarea>
+
+                <input type="submit" id="submit" value="Envoyer" name='action'>
+
             </form>
         </div>
     </div>

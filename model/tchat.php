@@ -9,7 +9,7 @@ if (!$connection){ // Contrôler la connexion
 else {
 if(!empty($_GET['message'])) {
 
-        $message = ($_GET['message']);
+        $message = addslashes($_GET['message']);
         // $message = htmlspecialchars($_GET['message']);
         $user = $_SESSION['id_user'];
 
