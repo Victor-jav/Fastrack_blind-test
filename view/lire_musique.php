@@ -3,3 +3,7 @@
                 <input type="file" name='son'><br><br>
                 <input type="submit" name='valider' value='charger'>
             </form>
+
+
+<?php
+
