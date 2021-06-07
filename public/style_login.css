@@ -52,7 +52,7 @@ input[type=submit] {
     font-weight: bold;
     border-radius: 10px;
     opacity: 1;
-    transition: 0.8s;
+    transition: 0.5s;
     
     
 }
@@ -61,5 +61,5 @@ input[type=submit]:hover {
     color: #2c2c2c;
     border: 1px solid #2c2c2c;
     opacity: 1;
-    transition: 0.8s;
+    transition: 0.5s;
 }
