@@ -4,34 +4,36 @@
     <div id="container">
         <!-- zone de connexion -->
         
-        <form action="./index.php" method="GET">
-            <h1>Connexion</h1>
+        <form action="" method="POST">
+            <h1>LOGIN</h1>
             
             <label><b>Nom d'utilisateur</b></label>
-            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="identifiant">
 
             <label><b>Mot de passe</b></label>
-            <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+            <input type="password" placeholder="Entrer le mot de passe" name="mdp">
 
-            <input type="submit" id='submit' name='action' value='LOGIN' >
+            <input type="submit" id='submit' value='LOGIN' name='action' >
             
-            <?php
-            if(isset($_GET['erreur'])){
-                $err = $_GET['erreur'];
-                if($err==1 || $err==2)
-                    echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                
-            }
-            ?>
         </form>
 
-        <!-- <form action="./index.php" method="GET">
-				<input id='submit' type="submit" value="sign_out" name="action">
-		</form> -->
 
         <form action="./index.php" method="GET">
-            <input type="submit" id='submit' value='INSCRIPTION' name='action' >
+            <input type="submit" id='submit' value='REGISTER' name='action' >
         </form>
+        
+        <?php
+            if(isset($erreur))
+            {
+                echo '<div class = "erreur">' . $erreur . '</div>';
+            }
+            if(isset($erreur2))
+            {
+                echo '<div class = "erreur">' . $erreur2 . '</div>';
+            }
+        ?>
+        
+
     </div>
 </div>
 

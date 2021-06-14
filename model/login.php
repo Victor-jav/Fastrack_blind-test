@@ -11,7 +11,7 @@
         }
         catch (PDOException $e)
         {
-            echo "bug lors de la co ac la bdd";
+            echo "erreur de connexion à la base de donnée";
         }
     }
 
