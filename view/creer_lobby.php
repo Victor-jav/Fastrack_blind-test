@@ -23,6 +23,9 @@
                 <a href='#' onclick='document.getElementById("afficher_lobby").submit()'>afficher le lobby</a>
             </div>
         </form>
-
+        <?php
+            require_once('.\model\creer_lobby.php');
+            echo $mdp;
+        ?>
     </body>
 </html>
