@@ -63,3 +63,13 @@ input[type=submit]:hover {
     opacity: 1;
     transition: 0.5s;
 }
+
+.erreur {
+    text-align: center;
+    color : rgb(230, 63, 63);
+}
+
+.succes {
+    text-align: center;
+    color : rgb(110, 225, 110);
+}

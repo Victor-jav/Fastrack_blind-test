@@ -14,7 +14,7 @@ session_start();
 				case  'LOGIN':
 					include("./controller/login.php");
 					break;
-				case  'INSCRIPTION':
+				case  'REGISTER':
 					include("./controller/register.php");
 					break;
 				case  'accueil':
