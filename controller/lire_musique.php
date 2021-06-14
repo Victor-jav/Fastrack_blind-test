@@ -14,3 +14,10 @@
             echo "bug lors de la co ac la bdd";
         }
     }
+
+    $page_css = "\"./public/style_party.css\"";
+    $title = "party";
+
+    $content="";
+    require_once('./view/lire_musique.php');
+?> 
