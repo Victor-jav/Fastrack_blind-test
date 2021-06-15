@@ -38,6 +38,8 @@ session_start();
 				case 'sign_out':
 					include("./controller/sign_out.php");
 					break;
+				case 'play':
+					include("./controller/lire_musique.php");
 				default :
 					include("./controller/login.php");
 			}
