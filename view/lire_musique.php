@@ -1,23 +1,12 @@
-<form name='fo' action="" method='post' enctype='multipart/form-data'>
-                <label><b>musique : </b></label><br>
-                <input type="file" name='son'><br><br>
-                <input type="submit" name='valider' value='charger'>
-            </form>
+<html>
+    <head>
+        <title></title>
+    </head>
+        <body>
 
+<strong><form action="./exo1.php" method="GET">
+<button type="submit" name="play">play</button>
+</form></strong>
 
-<?php
-
-    function db_connect()
-    {
-        try
-        {
-            $pdo = new PDO('mysql:host=localhost;dbname=fastrack','root','');
-            $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
-            //echo 'connextion réussie';
-            return $pdo;
-        }
-        catch (PDOException $e)
-        {
-            echo "bug lors de la co ac la bdd";
-        }
-    }
+</body>
+</html>
