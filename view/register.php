@@ -31,6 +31,10 @@ require('view\header.php');
         {
             echo '<div class = "erreur">' . $erreur . '</div>';
         }
+        if(isset($erreur2))
+        {
+            echo '<div class = "erreur">' . $erreur2 . '</div>';
+        }
         if(isset($succes))
         {
             echo '<div class = "succes">' . $succes . '</div>';
