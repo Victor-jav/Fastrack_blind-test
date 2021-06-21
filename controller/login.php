@@ -33,7 +33,6 @@
 
     $page_css = "\"./public/style_login.css\"";
     $title = "login";
-
-    $content="";
+    
     require_once('./view/login.php');
 ?> 

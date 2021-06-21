@@ -1,5 +1,17 @@
-  
 <?php require 'header.php'?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=<?= $page_css ?> rel="stylesheet">
+    <title><?= $title ?></title>
+</head>
+
+
 <div id="all">
     <div id="container">
         <!-- zone de connexion -->
@@ -13,7 +25,7 @@
             <label><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrer le mot de passe" name="mdp">
 
-            <input type="submit" id='submit' value='LOGIN' name='action' >
+            <input type="submit" id='submit_login' value='LOGIN' name='action' >
             
         </form>
 
@@ -36,5 +48,6 @@
 
     </div>
 </div>
+</html>
 
 <?php require 'footer.php'?> 

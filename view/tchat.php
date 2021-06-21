@@ -1,3 +1,5 @@
+<?php include 'header_membre.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,43 +11,13 @@
     <title><?= $title ?></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<header>
-    <table>
-        <tr>
-            <form action="./index.php" method="POST">
-                <div class="topnav">
-
-                    <p style="float:left"><img src="./public/fastrack_logo_petit.png" height="80px" /></p>
-                    <p>FASTRACK</p>
-
-                    <!-- j'ai trouvé cette strat sur un forum c'est vraiment trop bien, en gros c'est le bouton
-                c'est un href qui appelle un input invisible donc comme un input submit-->
-                    <form id="fastrack" action="./index.php" method='GET'>
-                        <input type="hidden" name="action" value="fastrack" />
-                    </form>
-
-                    <form id="sign_out" action="./index.php" method='GET'>
-                        <input type="hidden" name="action" value="sign_out" />
-                    </form>
-                    <a href='#' onclick='document.getElementById("sign_out").submit()'>Sign Out</a>
-
-                    <form id="info" action="./index.php" method='GET'>
-                        <input type="hidden" name="action" value="info" />
-                    </form>
-                    <a href='#' class="active"><?php echo 'Compte : ' . $_SESSION['identifiant']; ?></a>
-                </div>
-            </form>
-        </tr>
-        <tr>
-            <?= $content ?>
-        </tr>
-    </table>
-</header>
 
 <body>
 
     <div class="container">
+        <div class = "tchat_title">
         <h1>T-Chat Global</h1>
+        </div>
 
         <!-- affiche les messages en tant réel -->
 
@@ -95,5 +67,6 @@
     </div>
 
 </body>
-
 </html>
+
+<?php require 'footer.php'?> 

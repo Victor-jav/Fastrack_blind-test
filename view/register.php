@@ -1,6 +1,17 @@
-<?php
-require('view\header.php');
-?>
+<?php require 'header.php'?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=<?= $page_css ?> rel="stylesheet">
+    <title><?= $title ?></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
 <div id="all">
     <div id="container">
             <!-- zone d'enregistrement -->
@@ -22,7 +33,7 @@ require('view\header.php');
         </form>
 
         <form action="./index.php" method="GET">
-            <input type="submit" id='submit' value='LOGIN' name='action' >
+            <input type="submit" id='submit_register' value='LOGIN' name='action' >
         </form>
 
             <!-- erreur -->
@@ -43,6 +54,6 @@ require('view\header.php');
 
     </div>
 </div>
-<?php
-require('view\footer.php');
-?>
+</html>
+
+<?php require 'footer.php'?> 

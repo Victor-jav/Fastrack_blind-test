@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background: #0b111b;;
+  color: #fff;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 22.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: 0.8s;
+}
+nav .mainMenu .info a:hover {
+  background: #3F3DB2;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+nav .mainMenu .sign_out a:hover {
+  background: #ff726f;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 15px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo_title {
+  position: fixed;
+  left:80px;
+  top:3px;
+  margin: 8px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+nav .logo {
+  left:80px;
+  margin: 8px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media(max-width: 950px){
+  nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0b111b;
+      transition: top 1s ease;
+      display: none;
+  }
+  nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+  }
+  nav .openMenu {
+      display: block;
+  }
+  nav .mainMenu .info a:hover {
+      background: none;
+      color: #3F3DB2;
+
+  }
+
+  nav .mainMenu .sign_out a:hover {
+    background: none;
+    color: #ff726f;
+
+  }
+  .icons i {
+      display: inline-block;
+      padding: 12px;
+  }
+}

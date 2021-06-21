@@ -40,6 +40,5 @@ if(isset($_POST['action']))
     $page_css = "\"./public/style_login.css\"";
     $title = "register";
 
-    $content = "";
     require('view\register.php');
 ?>
