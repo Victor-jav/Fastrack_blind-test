@@ -5,7 +5,7 @@ if (empty($_SESSION['id_user'])){
 }
 
 $page_css = "\"./public/style_accueil.css\"";
-$title = "Message";
+$title = "Messages";
 
 require('.\view\message.php');
 

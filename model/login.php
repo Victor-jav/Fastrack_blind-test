@@ -21,7 +21,7 @@
         $bdd = db_connect();
 
         $sql = 'SELECT id_user FROM user WHERE identifiant = ? and mdp = SHA1(?) ';
-        $req = $bdd -> prepare ($sql) ;
+        $req = $bdd->prepare ($sql) ;
         $req->execute([$identifiant, $mdp]);
 
         $data = $req->fetch();
@@ -40,7 +40,7 @@
         $bdd = db_connect();
 
         $sql = 'SELECT id_user, identifiant, nom, prenom, mail FROM user WHERE identifiant = ?';
-        $req = $bdd -> prepare ($sql);
+        $req = $bdd->prepare ($sql);
         $req->execute([$identifiant]);
 
         $data = $req->fetch();

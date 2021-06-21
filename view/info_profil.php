@@ -11,12 +11,14 @@
     <title><?= $title ?></title>
 </head>
 
+<body>
 <div id="all">
     <div id="container">
     
         <form action="" method="POST">
             <h1>MON COMPTE</h1>
 
+            
             <label><b>Nom d'utilisateur</b></label><br>
             <input type="text" placeholder="Nouvelle Identifiant" value="<?php echo $info_user['identifiant']; ?>" name="newidentifiant"><br>
             <?php
@@ -30,7 +32,7 @@
             }
             ?>
 
-            <br>
+            <br><hr><br>
 
             <label><b>Nom</b></label><br>
             <input type="text" placeholder="Nouveau Nom" value="<?php echo $info_user['nom']; ?>" name="newnom"><br>
@@ -51,7 +53,7 @@
             }
             ?>
 
-            <br>
+            <br><hr><br>
 
             <label><b>Mot de pass</b></label><br>
             <input type="password" placeholder="Nouveau Mot de pass" value="" name="newmdp"><br>
@@ -77,5 +79,7 @@
         </form>
     </div>
 </div>
+<br><br>
+</body>
 
 <?php require 'footer.php' ?> 

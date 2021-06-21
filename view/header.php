@@ -8,7 +8,7 @@
     <link href=./public/style_default.css rel="stylesheet">
 </head>
 <body>
-        <nav>
+        <nav class="header">
             <div class="logo"><img src="./public/fastrack_logo_petit.png" height="62px"/></div>
             <div class="logo_title"><h1>FASTRACK</h1></div>
         </nav>

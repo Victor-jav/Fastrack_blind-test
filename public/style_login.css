@@ -10,12 +10,12 @@ body{
     background: #2d2c6c;
 }
 #all{
-    width:400px;
-    margin:0 auto;
-    margin-top:5%;
+    width:450px;
+    margin: 80px auto;
+    opacity: 1;
+    transition: 0.5s;
 }
 #container{
-    width:100%;
     padding: 30px;
     border: 1px solid #131313;
     background: #0b111b;
@@ -71,4 +71,24 @@ input[type=submit]:hover {
 .succes {
     text-align: center;
     color : rgb(110, 225, 110);
+}
+
+@media screen and (max-width: 700px) {
+
+    #all{
+        width:390px;
+        padding: 25px;
+        margin: 10px auto;
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+
+    #all{
+        margin: 180px auto;
+        opacity: 1;
+        transition: 0.5s;
+    }
 }

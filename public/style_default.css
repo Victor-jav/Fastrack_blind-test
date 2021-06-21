@@ -6,42 +6,37 @@
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+.header {
     background: #0b111b;
-    ;
     color: #fff;
     display: flex;
     height: 80px;
-    justify-content: space-between;
 }
 
-nav .logo_title {
-    position: fixed;
-    left: 80px;
-    top: 3px;
+.header .logo_title {
     margin: 8px;
     font-size: 25px;
     cursor: pointer;
+    align-self: center;
 }
 
-nav .logo {
-    left: 80px;
+.header .logo {
     margin: 8px;
-    font-size: 25px;
     cursor: pointer;
+    background: center;
 }
 
 .footer {
     background-color: #0b111b;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    padding-top: 25px;
     height: 50px;
-}
-
-.footer p {
-    text-align: center;
+    position:fixed;
+    bottom:0px;
+    font-size: 15px;
     color: whitesmoke;
-    text-transform: uppercase;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

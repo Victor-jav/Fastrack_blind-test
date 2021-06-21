@@ -6,18 +6,18 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-nav {
+.header_membre {
   background: #0b111b;;
   color: #fff;
   display: flex;
   height: 80px;
-  justify-content: space-between;
 }
-nav .mainMenu {
+.header_membre .mainMenu {
   display: flex;
   list-style: none;
+  margin-left: auto;
 }
-nav .mainMenu li a {
+.header_membre .mainMenu li a {
   display: inline-block;
   padding: 22.5px;
   text-decoration: none;
@@ -27,48 +27,47 @@ nav .mainMenu li a {
   opacity: 1;
   transition: 0.8s;
 }
-nav .mainMenu .info a:hover {
+.header_membre .mainMenu .info a:hover {
   background: #3F3DB2;
   opacity: 1;
   transition: 0.8s;
 }
 
-nav .mainMenu .sign_out a:hover {
+.header_membre .mainMenu .sign_out a:hover {
   background: #ff726f;
   opacity: 1;
   transition: 0.8s;
 }
 
-nav .openMenu {
+.header_membre .openMenu {
   font-size: 2rem;
   margin: 15px;
   display: none;
   cursor: pointer;
 }
-nav .mainMenu .closeMenu , .icons i {
+.header_membre .mainMenu .closeMenu , .icons i {
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
 
-nav .logo_title {
-  position: fixed;
-  left:80px;
-  top:3px;
+
+.header_membre .logo_title {
   margin: 8px;
   font-size: 25px;
   cursor: pointer;
+  align-self: center;
+  background: center;
 }
 
-nav .logo {
-  left:80px;
+.header_membre .logo {
   margin: 8px;
-  font-size: 25px;
   cursor: pointer;
+  background: center;
 }
 
-@media(max-width: 950px){
-  nav .mainMenu {
+@media(max-width: 1100px){
+  .header_membre .mainMenu {
       height: 100vh;
       position: fixed;
       top: 0;
@@ -82,23 +81,26 @@ nav .logo {
       transition: top 1s ease;
       display: none;
   }
-  nav .mainMenu .closeMenu {
+  .header_membre .mainMenu .closeMenu {
       display: block;
       position: absolute;
       top: 20px;
       right: 20px;
 
   }
-  nav .openMenu {
+  .header_membre .openMenu {
       display: block;
+      margin-left: auto;
+      opacity: 1;
+      transition: 0.5s;
   }
-  nav .mainMenu .info a:hover {
+  .header_membre .mainMenu .info a:hover {
       background: none;
       color: #3F3DB2;
 
   }
 
-  nav .mainMenu .sign_out a:hover {
+  .header_membre .mainMenu .sign_out a:hover {
     background: none;
     color: #ff726f;
 

@@ -8,7 +8,7 @@ if (empty($_SESSION['id_user'])){
 require('model\tchat.php');
 
 $page_css = "\"./public/style_tchat.css\"";
-$title = "Accueil";
+$title = "T-Chat Global";
 
 require('.\view\tchat.php');
 ?>

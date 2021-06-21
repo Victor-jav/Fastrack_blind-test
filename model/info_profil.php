@@ -43,6 +43,7 @@ if(isset($_SESSION['id_user']))
         } 
     }
 
+    //modifier les infos perso : nom ; pernom ; email
     if(isset($_POST['newnom']) AND !empty($_POST['newnom']) AND $_POST['newnom'] != $info_user['nom'])
     {
         $new_nom = htmlspecialchars($_POST['newnom']);
@@ -70,6 +71,8 @@ if(isset($_SESSION['id_user']))
         $succes_modify = "Vos Informations personnelles ont été modifiées avec succès !";
         header('Refresh: 5; URL=index.php?action=info');
     }
+
+    //modifier le mdp
     if(isset($_POST['newmdp']) AND !empty($_POST['newmdp']) AND $_POST['newmdp'] != $info_user['mdp'])
     {
         $new_mdp = sha1($_POST['newmdp']);

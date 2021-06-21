@@ -16,7 +16,7 @@
     <br><br><br><br><br><br>
 
     <form action="./index.php" method="POST">
-        <div class="topnav2">
+        <div class="topnav1">
 
             <form id="fastrack" action="./index.php" method='GET'>
                 <input type="hidden" name="action" value="fastrack" />
@@ -32,7 +32,7 @@
     <br><br>
 
     <form action="./index.php" method="POST">
-        <div class="topnav3">
+        <div class="topnav2">
 
             <form id="fastrack" action="./index.php" method='GET'>
                 <input type="hidden" name="action" value="fastrack" />
@@ -48,7 +48,7 @@
     <br><br>
 
     <form action="./index.php" method="POST">
-        <div class="topnav4">
+        <div class="topnav3">
 
             <form id="fastrack" action="./index.php" method='GET'>
                 <input type="hidden" name="action" value="fastrack" />
@@ -62,7 +62,6 @@
     </form>
 
 </body>
-
 </html>
 
 <?php require("footer.php"); ?>

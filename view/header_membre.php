@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-        <nav>
+        <nav class="header_membre">
             <div class="logo"><img src="./public/fastrack_logo_petit.png" height="62px"/></div>
             <div class="logo_title"><h1>FASTRACK</h1></div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>

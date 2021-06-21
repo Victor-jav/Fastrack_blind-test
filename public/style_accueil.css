@@ -11,6 +11,44 @@ body{
 }
 
 
+.topnav1 {
+  background-color: #0b111b;
+  overflow: hidden;
+  height: 108px;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav1 a {
+
+display: block;
+color: #f0f0f0;
+text-align: center;
+padding: 35px 80px;
+text-decoration: none;
+font-size: 25px;
+text-transform: uppercase;
+opacity: 1;
+transition: 0.8s;
+}
+
+
+/* Change the color of links on hover */
+.topnav1 a:hover {
+background-color: #3F3DB2;
+color: #f0f0f0;
+opacity: 1;
+transition: 0.8s;
+}
+
+/* Add a color to the active/current link */
+.topnav1 a.active {
+background-color: #0b111b;
+color: #f0f0f0;
+
+}
+
 .topnav2 {
   background-color: #0b111b;
   overflow: hidden;
@@ -49,6 +87,7 @@ color: #f0f0f0;
 
 }
 
+
 .topnav3 {
   background-color: #0b111b;
   overflow: hidden;
@@ -82,45 +121,6 @@ transition: 0.8s;
 
 /* Add a color to the active/current link */
 .topnav3 a.active {
-background-color: #0b111b;
-color: #f0f0f0;
-
-}
-
-
-.topnav4 {
-  background-color: #0b111b;
-  overflow: hidden;
-  height: 108px;
-  box-shadow: 0 0 20px 0 rgb(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-
-/* Style the links inside the navigation bar */
-.topnav4 a {
-
-display: block;
-color: #f0f0f0;
-text-align: center;
-padding: 35px 80px;
-text-decoration: none;
-font-size: 25px;
-text-transform: uppercase;
-opacity: 1;
-transition: 0.8s;
-}
-
-
-/* Change the color of links on hover */
-.topnav4 a:hover {
-background-color: #3F3DB2;
-color: #f0f0f0;
-opacity: 1;
-transition: 0.8s;
-}
-
-/* Add a color to the active/current link */
-.topnav4 a.active {
 background-color: #0b111b;
 color: #f0f0f0;
 
