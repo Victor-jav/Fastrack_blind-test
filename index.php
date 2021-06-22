@@ -20,6 +20,12 @@ session_start();
 				case  'accueil':
 					include("./controller/accueil.php");
 					break;
+				case  'info':
+					include("./controller/info_profil.php");
+					break;
+				case  'message':
+					include("./controller/message.php");
+					break;
 				case  'creer_lobby':
 					include("./controller/creer_lobby.php");
 					break;

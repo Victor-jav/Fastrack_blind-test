@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header_membre {
+  background: #0b111b;;
+  color: #fff;
+  display: flex;
+  height: 80px;
+}
+.header_membre .mainMenu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.header_membre .mainMenu li a {
+  display: inline-block;
+  padding: 22.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: 0.8s;
+}
+.header_membre .mainMenu .info a:hover {
+  background: #3F3DB2;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.header_membre .mainMenu .sign_out a:hover {
+  background: #ff726f;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.header_membre .openMenu {
+  font-size: 2rem;
+  margin: 15px;
+  display: none;
+  cursor: pointer;
+}
+.header_membre .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+.header_membre .logo_title {
+  margin: 8px;
+  font-size: 25px;
+  cursor: pointer;
+  align-self: center;
+  background: center;
+}
+
+.header_membre .logo {
+  margin: 8px;
+  cursor: pointer;
+  background: center;
+}
+
+@media(max-width: 1100px){
+  .header_membre .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0b111b;
+      transition: top 1s ease;
+      display: none;
+  }
+  .header_membre .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+  }
+  .header_membre .openMenu {
+      display: block;
+      margin-left: auto;
+      opacity: 1;
+      transition: 0.5s;
+  }
+  .header_membre .mainMenu .info a:hover {
+      background: none;
+      color: #3F3DB2;
+
+  }
+
+  .header_membre .mainMenu .sign_out a:hover {
+    background: none;
+    color: #ff726f;
+
+  }
+  .icons i {
+      display: inline-block;
+      padding: 12px;
+  }
+}

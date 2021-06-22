@@ -6,50 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.topnav {
-    background-color: #0b111b;
-    overflow: hidden;
-    height: 108px;
-}
-
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: #f0f0f0;
-    text-align: center;
-    padding: 35px 80px;
-    text-decoration: none;
-    font-size: 25px;
-    text-transform: uppercase;
-    opacity: 1;
-    transition: 0.8s;
-}
-
-.topnav p {
-    float: left;
-    color: #f0f0f0;
-    text-align: center;
-    padding: 14px 20px;
-    font-size: 50px;
-}
-
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #fd674d;
-    color: #f0f0f0;
-    opacity: 1;
-    transition: 0.8s;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #0b111b;
-    color: #f0f0f0;
-
-}
-
 
 body {
     background-color: #2d2c6c;
@@ -122,7 +78,7 @@ body {
 
 /* Fenetre Scroll Tchat */
 
-h1 {
+.tchat_title h1 {
     text-align: left;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -137,7 +93,7 @@ h1 {
     height: 570px;
     background: #0b111b;
     padding: 25px;
-    margin: 80px auto;
+    margin: 120px auto;
     box-shadow: 0 0 20px 0 rgb(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 
 }
@@ -229,7 +185,7 @@ h1 {
 
 /* Responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
 
     .taille {
         width: 220px;
@@ -250,8 +206,14 @@ h1 {
     }
 
     .container {
-
-
+        margin: 40px auto;
         width: 390px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+
+    .container {
+        margin: 150px auto;
     }
 }

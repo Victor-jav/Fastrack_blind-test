@@ -9,9 +9,25 @@
 body{
     background: #2d2c6c;
 }
+
+.delete_account_succes {
+    margin:0 auto;
+    margin-top:10%;
+    width:60%;
+    padding: 20px;
+    border: 1px solid #131313;
+    background: #0b111b;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+    color : rgb(110, 225, 110);
+    font-size: 30px;
+}
+
 #all{
     width:450px;
-    margin: 80px auto;
+    margin: 40px auto;
     opacity: 1;
     transition: 0.5s;
 }
@@ -55,9 +71,17 @@ input[type=submit] {
     opacity: 1;
     transition: 0.5s;
 }
-input[type=submit]:hover {
+#modify_submit:hover {
     background-color: #f0f0f0;
     color: #2c2c2c;
+    border: 0px solid;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#delete_submit:hover {
+    background-color: #ff726f;
+    color: whitesmoke;
     border: 0px solid;
     opacity: 1;
     transition: 0.5s;
@@ -66,11 +90,13 @@ input[type=submit]:hover {
 .erreur {
     text-align: center;
     color : rgb(230, 63, 63);
+    font-size: 15px;
 }
 
 .succes {
     text-align: center;
     color : rgb(110, 225, 110);
+    font-size: 15px;
 }
 
 @media screen and (max-width: 700px) {
@@ -78,7 +104,7 @@ input[type=submit]:hover {
     #all{
         width:390px;
         padding: 25px;
-        margin: 10px auto;
+        margin: 20px auto;
         opacity: 1;
         transition: 0.5s;
     }
@@ -87,7 +113,7 @@ input[type=submit]:hover {
 @media screen and (min-width: 2200px) {
 
     #all{
-        margin: 180px auto;
+        margin: 150px auto;
         opacity: 1;
         transition: 0.5s;
     }
