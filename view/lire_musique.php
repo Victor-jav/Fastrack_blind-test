@@ -4,7 +4,7 @@
     </head>
         <body>
 
-<strong><form action="./exo1.php" method="GET">
+<strong><form action="./model/lire_musique.php" method="GET">
 <button type="submit" name="play">play</button>
 </form></strong>
 
