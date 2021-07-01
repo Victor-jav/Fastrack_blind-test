@@ -46,6 +46,8 @@ session_start();
 					break;
 				case 'play':
 					include("./controller/lire_musique.php");
+				case 'start':
+						include("./controller/party.php");	
 				default :
 					include("./controller/login.php");
 			}
