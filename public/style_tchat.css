@@ -102,7 +102,6 @@ body {
     width: 100%;
     height: 450px;
     overflow-x:hidden;
-    overflow-y: scroll;
 }
 
 #base-container::-webkit-scrollbar {
@@ -215,5 +214,31 @@ body {
 
     .container {
         margin: 150px auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .taille {
+        width: 220px;
+        font-size: 12px;
+        height: auto;
+    }
+
+    .message_box textarea {
+
+        width: 100%;
+        height: 20px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .message_box input[type=submit] {
+        padding: 10px 35px;
+    }
+
+    .container {
+        margin: 40px auto;
+        width: 310px;
     }
 }

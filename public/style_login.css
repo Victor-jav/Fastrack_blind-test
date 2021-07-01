@@ -76,11 +76,12 @@ input[type=submit]:hover {
 @media screen and (max-width: 700px) {
 
     #all{
-        width:390px;
-        padding: 25px;
+        width: 320px;
         margin: 10px auto;
         opacity: 1;
         transition: 0.5s;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
