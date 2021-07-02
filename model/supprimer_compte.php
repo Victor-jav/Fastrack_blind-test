@@ -11,6 +11,11 @@ try
         $req->bindParam(':user_id', $user_id, PDO::PARAM_INT);
         $req->execute();
 
+        //supprime les messages de l'utilisateur avant la suppression du compte
+        $req = $bdd->prepare("DELETE FROM private_chat WHERE id_from = :user_id");
+        $req->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $req->execute();
+
         //supprime le compte lié à l'id de la session ($user_id) de la table user
         $req = $bdd->prepare("DELETE FROM user WHERE id_user = :user_id");
         $req->bindParam(':user_id', $user_id, PDO::PARAM_INT);
