@@ -23,7 +23,7 @@ session_start();
 				case  'info':
 					include("./controller/info_profil.php");
 					break;
-				case  'message':
+				case  'private_message':
 					include("./controller/message.php");
 					break;
 				case  'creer_lobby':
@@ -38,8 +38,11 @@ session_start();
 				case  'tchat':
 					include("./controller/tchat.php");
 					break;
-				case  'Envoyer':
+				case  'submit_global':
 					include("./controller/tchat.php");
+					break;
+				case  'submit_private':
+					include("./controller/message.php");
 					break;
 				case 'sign_out':
 					include("./controller/sign_out.php");

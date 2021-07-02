@@ -12,6 +12,28 @@
 </head>
 
 <body>
+    <section class="main_section">
+        <div class="section_contact">
+
+            <h1>Contact</h1>
+
+                <div class="contact_scroll">
+                <?php
+                require('model\user_affichage.php');
+                ?>
+                </div>
+
+                <?php
+                if(isset($erreur))
+                {
+                    echo '<div class = "erreur">' . $erreur . '</div>';
+                }
+                ?>
+                
+        </div>
+
+    </section>
+    
 </body>
 
 <?php require 'footer.php'?> 

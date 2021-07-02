@@ -17,7 +17,7 @@
             <ul class="mainMenu">
                 <li class="info"><a href="?action=accueil">Home</a></li>
                 <li class="info"><a href="?action=info">Mon Compte</a></li>
-                <li class="info"><a href="?action=message">Messages</a></li>
+                <li class="info"><a href="?action=private_message">Messages</a></li>
                 <li class="sign_out"><a href="?action=sign_out">Se Déconnecter</a></li>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
