@@ -1,3 +1,6 @@
+<?php require("header_membre.php"); ?>
+
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,7 +13,7 @@
         </div>
 
         <form action="./index.php" method="POST">
-            <div class="topnav5">
+            <div class="topnav1">
 
                 <form id="fastrack" action="./index.php" method='GET'>
                     <input type="hidden" name="action" value="fastrack" />
