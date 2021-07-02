@@ -34,6 +34,10 @@ session_start();
 					break;
 				case  'afficher_lobby':
 					include("./controller/afficher_lobby.php");
+				case 'play':
+					include("./controller/lire_musique.php");
+				case 'start':
+					include("./controller/party.php");	
 					break;
 				case  'tchat':
 					include("./controller/tchat.php");
@@ -47,10 +51,6 @@ session_start();
 				case 'sign_out':
 					include("./controller/sign_out.php");
 					break;
-				case 'play':
-					include("./controller/lire_musique.php");
-				case 'start':
-						include("./controller/party.php");	
 				default :
 					include("./controller/login.php");
 			}

@@ -1,3 +1,5 @@
+<?php require("header_membre.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
     <body>
+
+    <br><br><br><br><br><br>
+    
         <form action="./index.php" method="POST">
-            <div class="topnav5">
+            <div class="topnav1">
 
                 <form id="fastrack" action="./index.php" method='GET'>
                     <input type="hidden" name="action" value="fastrack" />
