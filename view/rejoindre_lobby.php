@@ -9,6 +9,18 @@
             <input id="userPassword" type="password" required>
         </div>
 
-        <input type="submit" value="rejoindre">
+        <form action="./index.php" method="POST">
+            <div class="topnav5">
+
+                <form id="fastrack" action="./index.php" method='GET'>
+                    <input type="hidden" name="action" value="fastrack" />
+                </form>
+
+                <form id="afficher_lobby" action="./index.php" method='GET'>
+                    <input type="hidden" name="action" value="afficher_lobby" />
+                </form>
+                <a href='#' onclick='document.getElementById("afficher_lobby").submit()'>afficher le lobby</a>
+            </div>
+        </form>
     </body>
 </html>
