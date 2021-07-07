@@ -1,5 +1,5 @@
 <?php
-
+echo "Debug : modele/lire_musique.php | Lecture du fichier : OK";
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=fastrack;charset=utf8', 'root', '');

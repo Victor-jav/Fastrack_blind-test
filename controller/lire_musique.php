@@ -5,20 +5,13 @@
         exit();
     }
 
-    
-
-    
-
-
     $page_css = "\"./public/style_party.css\"";
     $title = "party";
+    require('./view/lire_musique.php');
 
-    if(isset($_GET['lire_musique']))
-    {  
-        require('model\lire_musique.php');
-    }
- 
-    require('view\lire_musique.php');
+    require('./model/lire_musique.php');
+
+
 
 
 ?> 
