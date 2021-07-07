@@ -32,7 +32,7 @@
     }
 
     $page_css = "\"./public/style_login.css\"";
-    $title = "login";
+    $title = "FASTRACK LOGIN";
     
     require_once('./view/login.php');
 ?> 

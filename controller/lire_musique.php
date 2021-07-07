@@ -6,7 +6,7 @@
     }
 
     $page_css = "\"./public/style_party.css\"";
-    $title = "party";
+    $title = "Party";
     require('./view/lire_musique.php');
 
     require('./model/lire_musique.php');

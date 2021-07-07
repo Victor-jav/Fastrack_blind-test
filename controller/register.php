@@ -9,7 +9,7 @@ else {
     require('model\register.php');
 
     $page_css = "\"./public/style_login.css\"";
-    $title = "register";
+    $title = "FASTRACK REGISTER";
 
     require('view\register.php');
 }

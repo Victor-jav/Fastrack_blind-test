@@ -7,7 +7,7 @@ if (empty($_SESSION['id_user'])){
 }
 
 $page_css = "\"./public/style_rejoindre_lobby.css\"";
-$title = "Accueil";
+$title = "Rejoindre Lobby";
 
 require('.\view\rejoindre_lobby.php');
 

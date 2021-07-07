@@ -8,7 +8,7 @@ if (empty($_SESSION['id_user'])){
 require('model\creer_lobby.php');
 
 $page_css = "\"./public/style_creer_lobby.css\"";
-$title = "Accueil";
+$title = "Créer Lobby";
 
 ob_start();
 //ici
