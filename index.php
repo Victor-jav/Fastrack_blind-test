@@ -34,8 +34,10 @@ session_start();
 					break;
 				case  'afficher_lobby':
 					include("./controller/afficher_lobby.php");
-				case 'play':
+					break;
+				case 'lire_musique':
 					include("./controller/lire_musique.php");
+					break;
 				case 'start':
 					include("./controller/party.php");	
 					break;

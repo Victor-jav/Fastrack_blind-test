@@ -1,12 +1,19 @@
-<html>
-    <head>
-        <title></title>
-    </head>
-        <body>
+<?php require("header_membre.php"); ?>
 
-<strong><form action="./model/lire_musique.php" method="GET">
-<button type="submit" name="play">play</button>
-</form></strong>
+<!DOCTYPE html>
+<html lang="en">
 
-</body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=<?= $page_css ?> rel="stylesheet">
+    <title><?= $title ?></title>
+
+</head>
+    <body>
+    <p>Debug : Tu es bien arrivé dans la partie</p>
+    </body>
 </html>
+
+<?php require("footer.php"); ?>

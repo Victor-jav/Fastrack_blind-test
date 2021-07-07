@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href=<?= $page_css ?> rel="stylesheet">
     <title><?= $title ?></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
     <body>
 
@@ -28,9 +27,19 @@
                 <a href='#' onclick='document.getElementById("afficher_lobby").submit()'>afficher le lobby</a>
             </div>
         </form>
+
+        <div class= "password_lobby">
         <?php
             require_once('.\model\creer_lobby.php');
-            echo $mdp;
+            echo "Mot de Passe de votre Partie: <strong>$mdp</strong> ";
+            ?>
+            <br>
+            <?Php
+            echo "Note : Vous pouvez le partagez à vos amis pour qu'ils puissent rejoindre."
         ?>
+        </div>
+
     </body>
 </html>
+
+<?php require("footer.php"); ?>

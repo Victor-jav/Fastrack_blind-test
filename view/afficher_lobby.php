@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href=<?= $page_css ?> rel="stylesheet">
     <title><?= $title ?></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
     <body>
         <form action="./index.php" method="POST">
@@ -19,11 +19,13 @@
                     <input type="hidden" name="action" value="fastrack" />
                 </form>
 
-                <form id="lire_musique" action="./index.php" method='GET'>
+                <form id="lire_musique" action="" method='GET'>
                     <input type="hidden" name="action" value="lire_musique" />
                 </form>
-                <a href='#' onclick='document.getElementById("lire_musique").submit()'>commencer à jouer</a>
+                <a href='#' onclick='document.getElementById("lire_musique").submit()'>Commencer à jouer</a>
             </div>
         </form>
         </body>
 </html>
+
+<?php require("footer.php"); ?>

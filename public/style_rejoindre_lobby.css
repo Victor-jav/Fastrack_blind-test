@@ -1,50 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
-*
-{
+
+* {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
   background-color: #2d2c6c;
 }
 
-
-.topnav1 {
-  background-color: #0b111b;
-  overflow: hidden;
-  height: 108px;
+#all{
+  width:450px;
+  margin: 80px auto;
+  opacity: 1;
+  transition: 0.5s;
+}
+#container{
+  padding: 30px;
+  border: 1px solid #131313;
+  background: #0b111b;
   box-shadow: 0 0 20px 0 rgb(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  color:white;
+}
+/* Bordered form */
+#container h1{
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
-
-/* Style the links inside the navigation bar */
-.topnav1 a {
-
-display: block;
-color: #f0f0f0;
-text-align: center;
-padding: 35px 20px;
-text-decoration: none;
-font-size: 25px;
-text-transform: uppercase;
-opacity: 1;
-transition: 0.8s;
+/* Full-width inputs */
+input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
 }
 
-
-/* Change the color of links on hover */
-.topnav1 a:hover {
-background-color: #3F3DB2;
-color: #f0f0f0;
-opacity: 1;
-transition: 0.8s;
+/* Set a style for all buttons */
+button[type=submit] {
+  background-color: #2d2c6c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 0px solid;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 0.5s;
 }
-
-/* Add a color to the active/current link */
-.topnav1 a.active {
-background-color: #0b111b;
-color: #f0f0f0;
-
+button[type=submit]:hover {
+  background-color: #f0f0f0;
+  color: #2c2c2c;
+  border: 0px solid;
+  opacity: 1;
+  transition: 0.5s;
 }

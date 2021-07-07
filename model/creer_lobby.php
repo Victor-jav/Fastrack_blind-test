@@ -1,19 +1,22 @@
 <?php
 
-function Genere_mdp($taille)
-{
-    // Initialisation des caractères utilisables dans un tableau
-    $characters = array(1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ,"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
-
-    for($i=1;$i<$taille;$i++)
-    {
-        $taille .= strtoupper($characters[array_rand($characters)]);
+function passgen1($nbChar) {
+    $chaine ="mnoTUzS5678kVvwxy9WXYZRNCDEFrslq41GtuaHIJKpOPQA23LcdefghiBMbj0";
+    srand((double)microtime()*1000000);
+    $pass = '';
+    for($i=0; $i<$nbChar; $i++){
+        $pass .= $chaine[rand()%strlen($chaine)];
+        }
+    return $pass;
     }
-		
-    return $taille;
-}
 
-$mdp = Genere_mdp(6);
+    function passgen2($nbChar)
+    {
+    return substr(str_shuffle('abcdefghijklmnopqrstuvwxyzABCEFGHIJKLMNOPQRSTUVWXYZ0123456789'),1, $nbChar);
+    }
+
+    $mdp = passgen2(6);
+
 
 // Connexion à MySQL
 $connection= mysqli_connect("localhost", "root", "", "fastrack");

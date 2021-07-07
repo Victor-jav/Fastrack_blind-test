@@ -2,28 +2,32 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Rejoindre un lobby</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=<?= $page_css ?> rel="stylesheet">
+    <title><?= $title ?></title>
+</head>
+
+<p></p>
     <body>
-        <div>
-            <label for="userPassword">Mot de passe :</label>
-            <input id="userPassword" type="password" required>
-        </div>
+    <div id="all">
+        <div id="container">
 
-        <form action="./index.php" method="POST">
-            <div class="topnav1">
+        <form action="" method="GET">
+            
+        <label><b>Mot de passe de la Partie</b></label>
+            <hr>
+            <input type="password" placeholder="Entrer le mot de passe de la partie" name="mdp" required>
 
-                <form id="fastrack" action="./index.php" method='GET'>
-                    <input type="hidden" name="action" value="fastrack" />
-                </form>
-
-                <form id="afficher_lobby" action="./index.php" method='GET'>
-                    <input type="hidden" name="action" value="afficher_lobby" />
-                </form>
-                <a href='#' onclick='document.getElementById("afficher_lobby").submit()'>afficher le lobby</a>
-            </div>
+            <button type="submit" id="submit" value="afficher_lobby" name='action'>Rejoindre la partie</button>
+            
         </form>
+        </div>
+    </div>
+
     </body>
 </html>
+
+<?php require("footer.php"); ?>
