@@ -9,7 +9,7 @@
     $title = "Party";
     require('./view/lire_musique.php');
 
-    require('./model/lire_musique.php');
+    require('./model/lire_musique.php');dd
 
 
 
